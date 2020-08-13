@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MADD_OrderManagement</string>
+    <string name="display_product">Product</string>
+    <string name="cake_name">Coffee cake</string>
+    <string name="cake_description">Same design as shown in the image. Weight is 1 Kg.</string>
+    <string name="cake_price">LKR 1800.00</string>
+    <string name="view_home">Home</string>
+    <string name="view_occasions">Occasions</string>
+    <string name="view_account">Account</string>
+    <string name="view_cart">Cart</string>
+    <string name="display_checkout">Buy now</string>
+    <string name="display_discountMessage">Buy more than 1 item and get a 5% discount!</string>
+</resources>
