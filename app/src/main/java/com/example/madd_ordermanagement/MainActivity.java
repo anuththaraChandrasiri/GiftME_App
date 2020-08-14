@@ -25,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MyCart.class));
             }
         });
+
+        ImageButton buttonAccount = (ImageButton) findViewById(R.id.btnAccount);
+
+        buttonAccount.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, MyAllOrders.class));
+            }
+        });
+
     }
 
     /** Called when the user taps the Chekout button */

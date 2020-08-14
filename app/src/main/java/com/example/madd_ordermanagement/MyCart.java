@@ -35,6 +35,15 @@ public class MyCart extends AppCompatActivity {
                 startActivity(new Intent(MyCart.this, MainActivity.class));
             }
         });
+
+        Button buttonProduct1Delete = (Button) findViewById(R.id.btnProduct1Delete);
+
+        buttonProduct1Delete.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MyCart.this, DeleteFromCart.class));
+            }
+        });
+
     }
 
     /** Called when the user taps the Chekout button */

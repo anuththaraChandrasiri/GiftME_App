@@ -37,4 +37,19 @@
     <string name="text_update">Update</string>
     <string name="toblerone_name">Toblerone chocolate</string>
     <string name="toblerone_price">LKR 1250.00</string>
+    <string name="text_deleteFromCart">Delete from cart</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_message1">Are you sure you want to</string>
+    <string name="text_message2">delete this item?</string>
+    <string name="text_AllOrders">All orders</string>
+    <string name="text_OrdersToPay">Orders to pay</string>
+    <string name="text_myOrderNumber1">Order 202007291612</string>
+    <string name="text_paid">Paid</string>
+    <string name="text_orderStatus1">Pending</string>
+    <string name="text_orderStatus2">Delivered</string>
+    <string name="text_placedOn1">Placed on 29 July 2020 20 : 16 : 12</string>
+    <string name="text_paidOn1">Paid on 29 July 2020 20 : 16 : 20</string>
+    <string name="text_viewOrder">View order</string>
+    <string name="text_shopMore">Shop more</string>
+    <string name="text_noOrdersToPay">There are no orders to pay!</string>
 </resources>

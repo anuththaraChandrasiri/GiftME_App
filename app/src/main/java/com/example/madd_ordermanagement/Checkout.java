@@ -54,5 +54,14 @@ public class Checkout extends AppCompatActivity {
                 startActivity(new Intent(Checkout.this, MyCart.class));
             }
         });
+
+        ImageButton buttonBack = (ImageButton) findViewById(R.id.btnBackToProduct);
+
+        buttonBack.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(Checkout.this, MainActivity.class));
+            }
+        });
+
     }
 }
