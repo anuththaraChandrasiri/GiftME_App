@@ -1,13 +1,15 @@
 package com.example.madd_ordermanagement;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MyCart extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE1 = "com.example.madd_ordermanagement.MESSAGE1";
     public static final String EXTRA_MESSAGE2 = "com.example.madd_ordermanagement.MESSAGE2";
@@ -16,13 +18,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_my_cart);
 
         ImageButton buttonCart = (ImageButton) findViewById(R.id.btnCart);
 
         buttonCart.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(MainActivity.this, MyCart.class));
+                startActivity(new Intent(MyCart.this, MyCart.class));
+            }
+        });
+
+        Button buttonProduct1Update = (Button) findViewById(R.id.btnProduct1Update);
+
+        buttonProduct1Update.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MyCart.this, MainActivity.class));
             }
         });
     }
@@ -30,19 +40,19 @@ public class MainActivity extends AppCompatActivity {
     /** Called when the user taps the Chekout button */
     public void sendMessage(View view) {
 
-    // Do something in response to button
+        // Do something in response to button
 
         Intent intent = new Intent(this, Checkout.class);
 
-        TextView textView1 = (TextView) findViewById(R.id.txtProductName);
+        TextView textView1 = (TextView) findViewById(R.id.txtProduct1);
         String message1 = textView1.getText().toString();
         intent.putExtra(EXTRA_MESSAGE1, message1);
 
-        TextView textView2 = (TextView) findViewById(R.id.txtProductPrice);
+        TextView textView2 = (TextView) findViewById(R.id.txtProduct1Price);
         String message2 = textView2.getText().toString();
         intent.putExtra(EXTRA_MESSAGE2, message2);
 
-        TextView textView3 = (TextView) findViewById(R.id.txtOrderingItems);
+        TextView textView3 = (TextView) findViewById(R.id.txtProduct1Items);
         String message3 = textView3.getText().toString();
         intent.putExtra(EXTRA_MESSAGE3, message3);
 
