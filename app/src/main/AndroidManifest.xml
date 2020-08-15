@@ -12,11 +12,7 @@
         <activity android:name=".ResetPassword_Activity"></activity>
         <activity android:name=".CustomerAccount_Activity" />
         <activity android:name=".CustomerEditAccount_Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".OccasionProduct_Activity" />
         <activity android:name=".AppLaunch_Activity" />
@@ -25,7 +21,12 @@
         <activity android:name=".CreateAccount_Activity" />
         <activity android:name=".AddProduct_Activity" />
         <activity android:name=".AdminProduct_Activity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
     </application>
 
 </manifest>
