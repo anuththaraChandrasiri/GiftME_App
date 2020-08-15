@@ -7,11 +7,17 @@
     <string name="delete">Delete</string>
     <string name="sts">Status</string>
 
-    <string name = "Vew">View</string>
+    <string name="Vew">View</string>
     <string name="view_home">Home</string>
     <string name="view_occasions">Occasions</string>
     <string name="view_account">Account</string>
     <string name="view_cart">Cart</string>
     <string name="display_checkout">Delivery History</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 
 </resources>
