@@ -54,6 +54,8 @@
     <string name="AddCart">Add to Cart</string>
     <string name="phone">phone</string>
     <string name="paswdrst">Reset Password</string>
+    <string name="editAccount">Edit Account</string>
     <string name="Dummy">Dmmy Data</string>
+    <string name="Accountdets">Account Details</string>
 
 </resources>

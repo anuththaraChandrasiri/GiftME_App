@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class CreateAccount_Activity extends AppCompatActivity {
+public class CustomerEditAccount_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_account_);
+        setContentView(R.layout.activity_customer_edit_account_);
 
-        Button btn = findViewById(R.id.btnSignIn);
+        Button btn = findViewById(R.id.btnSaveEdit);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CreateAccount_Activity.this,CustomerAccount_Activity.class);
+                Intent i = new Intent(CustomerEditAccount_Activity.this,CustomerAccount_Activity.class);
                 startActivity(i);
             }
         });

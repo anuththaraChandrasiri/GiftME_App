@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFE3AE"
     android:backgroundTint="#FFE3AE"
-    tools:context=".CustomerProductHome_Activity">
+    tools:context=".CustomerEditAccount_Activity">
 
 
     <TextView
@@ -140,7 +140,7 @@
         android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
-        android:text="@string/view_account"
+        android:text="@string/editAccount"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FF8351"
@@ -176,12 +176,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textStyle="normal|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editCusAccName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/TvAccountEmail"
@@ -193,7 +191,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textStyle="normal|bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TvEmailAccount"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editCusAccMail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent" />
@@ -208,6 +206,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textStyle="normal|bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editCusAccPhone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
@@ -215,64 +214,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.347" />
 
-    <TextView
-        android:id="@+id/TvnameAccount"
-        android:layout_width="222dp"
-        android:layout_height="37dp"
-        android:text="@string/Dummy"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TvAccountName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/TvEmailAccount"
-        android:layout_width="222dp"
-        android:layout_height="37dp"
-        android:text="@string/Dummy"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
-
-    <TextView
-        android:id="@+id/TvPhoneAccount"
-        android:layout_width="222dp"
-        android:layout_height="37dp"
-        android:text="@string/Dummy"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TvAccounPhone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <Button
-        android:id="@+id/btnResetPAssword"
+        android:id="@+id/btnSaveEdit"
         android:layout_width="287dp"
         android:layout_height="50dp"
         android:background="#B71C1C"
-        android:text="@string/paswdrst"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textStyle="normal|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btneditDetails"
-        android:layout_width="287dp"
-        android:layout_height="50dp"
-        android:background="#B71C1C"
-        android:text="@string/editProd"
+        android:text="@string/AddProductSave"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textStyle="normal|bold"
@@ -281,5 +228,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.599" />
+
+    <EditText
+        android:id="@+id/editCusAccName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Dummy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <EditText
+        android:id="@+id/editCusAccMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/Dummy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <EditText
+        android:id="@+id/editCusAccPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336"
+        tools:text="@tools:sample/us_phones" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
