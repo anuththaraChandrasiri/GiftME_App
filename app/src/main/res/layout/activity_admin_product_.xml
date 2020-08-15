@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="#FEFAC0"
+    tools:context=".AddProduct_Activity">
+
+    <ImageView
+        android:id="@+id/navBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFC957"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/TvAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAccount"
+        app:srcCompat="@drawable/navbar" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="37dp"
+        android:backgroundTint="#FFC957"
+        android:contentDescription="@string/view_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddnewProd"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/btnOccasion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="39dp"
+        android:backgroundTint="#FFC957"
+        android:contentDescription="@string/view_products"
+        app:layout_constraintBottom_toTopOf="@+id/TvOccasion"
+        app:layout_constraintEnd_toStartOf="@+id/btnAccount"
+        app:layout_constraintStart_toEndOf="@+id/btnCart"
+        app:layout_constraintTop_toTopOf="@+id/btnCart"
+        app:srcCompat="@drawable/occasion" />
+
+    <ImageButton
+        android:id="@+id/btnAccount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="17dp"
+        android:backgroundTint="#FFC957"
+        android:contentDescription="@string/view_account"
+        app:layout_constraintBottom_toTopOf="@+id/TvAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnOccasion"
+        app:layout_constraintTop_toTopOf="@+id/btnOccasion"
+        app:srcCompat="@drawable/account" />
+
+    <ImageButton
+        android:id="@+id/btnCart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="53dp"
+        android:backgroundTint="#FFC957"
+        android:contentDescription="@string/View_orders"
+        app:layout_constraintBottom_toTopOf="@+id/TvCart"
+        app:layout_constraintEnd_toStartOf="@+id/btnOccasion"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="@+id/btnHome"
+        app:srcCompat="@drawable/cart" />
+
+    <TextView
+        android:id="@+id/TvCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/View_orders"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnCart" />
+
+    <TextView
+        android:id="@+id/TvAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#FFC957"
+        android:text="@string/view_account"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnAccount" />
+
+    <TextView
+        android:id="@+id/TvOccasion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/view_products"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnOccasion" />
+
+    <TextView
+        android:id="@+id/TvHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_home"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintEnd_toEndOf="@+id/btnHome" />
+
+    <TextView
+        android:id="@+id/TvProductsCustomer"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/prod_interface"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF6F00"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/prodImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/view_products"
+        app:layout_constraintBottom_toBottomOf="@+id/TvProductsCustomer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/occasion" />
+
+    <TextView
+        android:id="@+id/TvProdContainer"
+        android:layout_width="334dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="80dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/editBtnProd"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/editBtnProd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/prodImage1"
+        android:layout_width="129dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editBtnProd"
+        app:layout_constraintStart_toStartOf="@+id/TvProdContainer"
+        app:layout_constraintTop_toBottomOf="@+id/TvprodName"
+        app:srcCompat="@drawable/toblerone" />
+
+    <TextView
+        android:id="@+id/Tvprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/price"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="@+id/editBtnProd"
+        app:layout_constraintTop_toBottomOf="@+id/TvprodName" />
+
+    <Button
+        android:id="@+id/editBtnProd"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="55dp"
+        android:backgroundTint="#DD2C00"
+        android:text="@string/editProd"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="@+id/removeBtnProd"
+        app:layout_constraintEnd_toEndOf="@+id/removeBtnProd"
+        app:layout_constraintStart_toStartOf="@+id/removeBtnProd"
+        app:layout_constraintTop_toTopOf="@+id/Tvprice" />
+
+    <Button
+        android:id="@+id/removeBtnProd"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#DD2C00"
+        android:text="@string/removeProd"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="@+id/TvProdContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCart" />
+
+    <TextView
+        android:id="@+id/TvprodName"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="133dp"
+        android:text="@string/toblerone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0C0B0B"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/removeBtnProd"
+        app:layout_constraintEnd_toEndOf="@+id/btnOccasion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddnewProd"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="115dp"
+        android:backgroundTint="#DD2C00"
+        android:text="@string/AddNew"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
