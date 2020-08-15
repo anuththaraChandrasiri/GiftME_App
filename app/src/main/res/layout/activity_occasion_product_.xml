@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
     android:background="#FFE3AE"
     android:backgroundTint="#FFE3AE"
-    tools:context=".CustomerProductHome_Activity">
-
+    tools:context=".OccasionProduct_Activity">
 
     <TextView
         android:id="@+id/textView"
@@ -49,20 +49,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.935"
         app:srcCompat="@drawable/occasion" />
-
-    <ImageButton
-        android:id="@+id/btnAccount"
-        android:layout_width="55dp"
-        android:layout_height="40dp"
-        android:backgroundTint="#ff8351"
-        android:contentDescription="@string/view_account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.915"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94"
-        app:srcCompat="@drawable/account" />
 
     <ImageButton
         android:id="@+id/btnCart"
@@ -140,7 +126,7 @@
         android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
-        android:text="@string/view_account"
+        android:text="@string/tvOccasion"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FF8351"
@@ -167,119 +153,150 @@
         app:srcCompat="@drawable/occasion" />
 
     <TextView
-        android:id="@+id/TvAccountName"
-        android:layout_width="67dp"
-        android:layout_height="34dp"
-        android:background="#B71C1C"
-        android:text="@string/formName"
+        android:id="@+id/TvprodTag"
+        android:layout_width="179dp"
+        android:layout_height="28dp"
+        android:background="#C3492B"
+        android:text="@string/occassion1"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
+        android:textSize="18sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.038"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.105" />
 
     <TextView
-        android:id="@+id/TvAccountEmail"
-        android:layout_width="67dp"
-        android:layout_height="34dp"
-        android:background="#B71C1C"
-        android:text="@string/loginLabel1"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/TvprodListCus"
+        android:layout_width="354dp"
+        android:layout_height="240dp"
+        android:background="#0C0A0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <TextView
+        android:id="@+id/TvProdNameCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toblerone"
         android:textColor="#FFFFFF"
-        android:textStyle="normal|bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TvEmailAccount"
+        android:textSize="14sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
 
     <TextView
-        android:id="@+id/TvAccounPhone"
-        android:layout_width="67dp"
-        android:layout_height="34dp"
-        android:background="#B71C1C"
-        android:text="@string/phone"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/TvprodPriceCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
         android:textColor="#FFFFFF"
+        android:textSize="14sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.668"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintVertical_bias="0.258" />
 
     <TextView
-        android:id="@+id/TvnameAccount"
-        android:layout_width="222dp"
-        android:layout_height="37dp"
-        android:text="@string/Dummy"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TvAccountName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/TvEmailAccount"
-        android:layout_width="222dp"
-        android:layout_height="37dp"
-        android:text="@string/Dummy"
-        android:textAlignment="center"
-        android:textSize="18sp"
+        android:id="@+id/TvProddescriptCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prodDescription"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintHorizontal_bias="0.66"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintVertical_bias="0.296" />
 
-    <TextView
-        android:id="@+id/TvPhoneAccount"
-        android:layout_width="222dp"
-        android:layout_height="37dp"
-        android:text="@string/Dummy"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TvAccounPhone"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="155dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271"
+        app:srcCompat="@drawable/toblerone" />
 
     <Button
-        android:id="@+id/btnResetPAssword"
-        android:layout_width="287dp"
-        android:layout_height="50dp"
+        android:id="@+id/btnViewProd"
+        android:layout_width="136dp"
+        android:layout_height="34dp"
         android:background="#B71C1C"
-        android:text="@string/paswdrst"
+        android:text="@string/ViewProd"
         android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
+        android:textSize="14sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btneditDetails"
-        android:layout_width="287dp"
-        android:layout_height="50dp"
-        android:background="#B71C1C"
-        android:text="@string/editProd"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textStyle="normal|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
+        app:layout_constraintVertical_bias="0.364" />
+
+    <Button
+        android:id="@+id/btnAddCart"
+        android:layout_width="148dp"
+        android:layout_height="36dp"
+        android:background="#B71C1C"
+        android:text="@string/AddCart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <Button
+        android:id="@+id/btnBuyNow"
+        android:layout_width="148dp"
+        android:layout_height="36dp"
+        android:background="#B71C1C"
+        android:text="@string/BuyNow"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAddCart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <ImageButton
+        android:id="@+id/btnAccount"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:background="#FF8351"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933"
+        app:srcCompat="@drawable/account" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -52,5 +52,8 @@
     <string name="BuyNow">Buy Now</string>
     <string name="ViewProd">View</string>
     <string name="AddCart">Add to Cart</string>
+    <string name="phone">phone</string>
+    <string name="paswdrst">Reset Password</string>
+    <string name="Dummy">Dmmy Data</string>
 
 </resources>

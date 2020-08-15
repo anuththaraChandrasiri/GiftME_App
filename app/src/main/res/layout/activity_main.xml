@@ -5,7 +5,7 @@
     android:id="@+id/txtProduct"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0FF8351E"
+    android:background="#880E4F"
     android:backgroundTint="#FFE3AE"
     android:textAlignment="center"
     tools:context=".MainActivity">

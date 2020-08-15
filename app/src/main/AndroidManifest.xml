@@ -13,16 +13,16 @@
         <activity android:name=".AppLaunch_Activity" />
         <activity android:name=".login_Activity" />
         <activity android:name=".EditProduct_Activity" />
-        <activity android:name=".CustomerProductHome_Activity" />
+        <activity android:name=".CustomerProductHome_Activity" ><intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
         <activity android:name=".CreateAccount_Activity" />
         <activity android:name=".AddProduct_Activity" />
         <activity android:name=".AdminProduct_Activity" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
