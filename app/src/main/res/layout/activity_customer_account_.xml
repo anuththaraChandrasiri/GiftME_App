@@ -167,7 +167,7 @@
         app:srcCompat="@drawable/occasion" />
 
     <TextView
-        android:id="@+id/TvAccountName"
+        android:id="@+id/TvPasswordedit"
         android:layout_width="67dp"
         android:layout_height="34dp"
         android:background="#B71C1C"
@@ -184,7 +184,7 @@
         app:layout_constraintVertical_bias="0.16" />
 
     <TextView
-        android:id="@+id/TvAccountEmail"
+        android:id="@+id/TvreEnterPswd"
         android:layout_width="67dp"
         android:layout_height="34dp"
         android:background="#B71C1C"
@@ -222,9 +222,9 @@
         android:text="@string/Dummy"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TvAccountName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/TvPasswordedit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -254,7 +254,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnResetPAssword"
+        android:id="@+id/btnConfirmResetPswd"
         android:layout_width="287dp"
         android:layout_height="50dp"
         android:background="#B71C1C"

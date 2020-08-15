@@ -57,5 +57,6 @@
     <string name="editAccount">Edit Account</string>
     <string name="Dummy">Dmmy Data</string>
     <string name="Accountdets">Account Details</string>
+    <string name="resetPassword">\t\t\tReset Account Password</string>
 
 </resources>

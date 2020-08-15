@@ -18,7 +18,16 @@ public class CustomerAccount_Activity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CustomerAccount_Activity.this , CustomerEditAccount_Activity.class);
+                Intent i = new Intent(CustomerAccount_Activity.this, CustomerEditAccount_Activity.class);
+                startActivity(i);
+            }
+        });
+
+        Button btn2 = findViewById(R.id.btnConfirmResetPswd);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(CustomerAccount_Activity.this, ResetPassword_Activity.class);
                 startActivity(i);
             }
         });
