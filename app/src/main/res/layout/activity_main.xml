@@ -8,7 +8,7 @@
     android:background="#F3E77D"
     android:backgroundTint="#FFF38B"
     android:textAlignment="center"
-    tools:context=".MainActivity">
+    tools:context="com.example.madd_Deliverymanagement.DeliverDashboard">
 
     <TextView
         android:id="@+id/textView"
@@ -59,7 +59,8 @@
         app:layout_constraintEnd_toStartOf="@+id/navbarRectangle"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/navbarRectangle" />
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle"
+        android:contentDescription="TODO" />
 
     <ImageButton
         android:id="@+id/btnOccasion"
@@ -77,7 +78,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/navbarRectangle"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.166"
+        android:contentDescription="TODO" />
 
     <ImageButton
         android:id="@+id/btnCart"
@@ -234,7 +236,7 @@
         android:layout_height="50dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="@string/delete"
+        android:text="@string/dlt"
         android:textAlignment="center"
         android:textColor="#0B0909"
         android:textStyle="bold"
@@ -319,7 +321,8 @@
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -340,7 +343,7 @@
         android:layout_width="85dp"
         android:layout_height="43dp"
         android:background="#E4FF0000"
-        android:text="@string/delete"
+        android:text="@string/dlt"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

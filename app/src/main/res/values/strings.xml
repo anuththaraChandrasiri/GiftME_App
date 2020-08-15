@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">MADD_DeliveryManagement</string>
     <string name="display_product">Pack to Deliver-Dashboard</string>
-    <string name="code">Code</string>
-    <string name="name">Name</string>
-    <string name="vw">View </string>
-    <string name="delete">Delete</string>
-    <string name="sts">Status</string>
+    <string name="code">Item Name</string>
+    <string name="name">Quantity</string>
+    <string name="vw">View</string>
+    <string name="dlt">Delete</string>
+    <string name="sts">Price</string>
 
     <string name="Vew">View</string>
     <string name="view_home">Home</string>
@@ -14,10 +14,20 @@
     <string name="view_cart">Cart</string>
     <string name="display_checkout">Delivery History</string>
     <string name="title_activity_main2">MainActivity2</string>
+
+
+    <string name="head2">Delivery Information</string>
+    <string name="add">Address</string>
+    <string name="phn">Phone</string>
+    <string name="od">Ordered Date</string>
+
+    <string name="back">Back</string>
+    <string name="title_activity_deliver_to">DeliverTo</string>
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
     -->
     <string name="hello_world">Hello Square World!</string>
+
 
 </resources>
