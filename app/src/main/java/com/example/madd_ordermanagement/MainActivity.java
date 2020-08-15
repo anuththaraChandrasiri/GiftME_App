@@ -34,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton buttonHome = (ImageButton) findViewById(R.id.btnBackToProduct);
+
+        buttonHome.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, AdminOrders.class));
+            }
+        });
+
     }
 
     /** Called when the user taps the Chekout button */

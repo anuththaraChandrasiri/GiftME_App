@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CancelOrder"></activity>
+        <activity android:name=".AdminViewOrder"></activity>
+        <activity android:name=".AdminOrders" />
+        <activity android:name=".CancelOrder" />
         <activity android:name=".ViewOrder" />
         <activity android:name=".OrdersToPay" />
         <activity android:name=".MyAllOrders" />
