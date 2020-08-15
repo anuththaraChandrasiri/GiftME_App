@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonHome.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(MainActivity.this, AdminOrders.class));
+                startActivity(new Intent(MainActivity.this, AdminMyAccount.class));
             }
         });
 
