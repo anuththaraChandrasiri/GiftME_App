@@ -8,17 +8,17 @@
     android:background="#FFE3AE"
     android:backgroundTint="#FFE3AE"
     android:textAlignment="center"
-    tools:context=".DeleteFromCart">
+    tools:context=".CancelOrder">
 
     <TextView
-        android:id="@+id/textDeleteFromCart"
+        android:id="@+id/txtCancelOrder"
         android:layout_width="345dp"
         android:layout_height="45dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:background="#F6F2F2"
-        android:text="@string/text_deleteFromCart"
+        android:text="@string/text_cancelOrder"
         android:textAlignment="center"
         android:textColor="#FF8351"
         android:textSize="30sp"
@@ -192,7 +192,6 @@
         android:layout_marginTop="120dp"
         android:layout_marginEnd="17dp"
         android:layout_marginBottom="12dp"
-        android:text="@string/cake_name"
         android:textColor="#131111"
         app:layout_constraintBottom_toTopOf="@+id/txtProduct1Price"
         app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
@@ -202,18 +201,19 @@
 
     <TextView
         android:id="@+id/txtProduct1Price"
-        android:layout_width="110dp"
-        android:layout_height="22dp"
+        android:layout_width="108dp"
+        android:layout_height="21dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="17dp"
-        android:text="@string/cake_price"
+        android:layout_marginBottom="135dp"
         android:textColor="#120A0A"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
         app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imgProduct1"
-        app:layout_constraintTop_toBottomOf="@+id/txtProduct1" />
+        app:layout_constraintTop_toTopOf="@+id/checkoutRectangle" />
 
     <TextView
         android:id="@+id/txtProduct1Quantity"
@@ -239,7 +239,6 @@
         android:layout_marginTop="13dp"
         android:layout_marginEnd="17dp"
         android:layout_marginBottom="104dp"
-        android:text="@string/text_defaultNoOfItems"
         android:textColor="#0B0808"
         app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
         app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
@@ -248,34 +247,35 @@
         app:layout_constraintTop_toBottomOf="@+id/txtProduct1Price" />
 
     <Button
-        android:id="@+id/btnProduct1Delete"
+        android:id="@+id/btnProduct1Cancel"
         android:layout_width="120dp"
         android:layout_height="37dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="29dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="25dp"
-        android:background="#FF8351"
-        android:text="@string/text_delete"
-        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
-        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
-        app:layout_constraintStart_toEndOf="@+id/btnProduct1Update"
-        app:layout_constraintTop_toBottomOf="@+id/imgProduct1" />
-
-    <Button
-        android:id="@+id/btnProduct1Cancel"
-        android:layout_width="120dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="53dp"
         android:layout_marginBottom="25dp"
         android:background="#FF8351"
         android:text="@string/text_cancel"
         app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
-        app:layout_constraintEnd_toStartOf="@+id/btnProduct1Delete"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintStart_toEndOf="@+id/btnExit"
+        app:layout_constraintTop_toBottomOf="@+id/imgProduct1"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFD8AD"
+        android:text="@string/text_exit"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toStartOf="@+id/btnProduct1Cancel"
         app:layout_constraintStart_toStartOf="@+id/checkoutRectangle"
-        app:layout_constraintTop_toBottomOf="@+id/imgProduct1" />
+        app:layout_constraintTop_toTopOf="@+id/checkoutRectangle" />
 
     <TextView
         android:id="@+id/txtOrderNumber1"
@@ -297,7 +297,7 @@
         app:layout_constraintTop_toTopOf="@+id/checkoutRectangle" />
 
     <TextView
-        android:id="@+id/txtMessage2"
+        android:id="@+id/txtCancelOrderMessage2"
         android:layout_width="320dp"
         android:layout_height="30dp"
         android:layout_marginStart="26dp"
@@ -305,7 +305,7 @@
         android:layout_marginEnd="33dp"
         android:layout_marginBottom="21dp"
         android:background="#FEF8A0"
-        android:text="@string/text_message2"
+        android:text="@string/text_cancelOrderMessage2"
         android:textAlignment="center"
         android:textColor="#040202"
         android:textSize="18sp"
@@ -314,5 +314,6 @@
         app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
         app:layout_constraintStart_toStartOf="@+id/checkoutRectangle"
         app:layout_constraintTop_toBottomOf="@+id/txtOrderNumber1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

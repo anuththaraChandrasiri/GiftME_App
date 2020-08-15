@@ -3,13 +3,14 @@ package com.example.madd_ordermanagement;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class MyCart extends AppCompatActivity {
+public class ViewOrder extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE1 = "com.example.madd_ordermanagement.MESSAGE1";
     public static final String EXTRA_MESSAGE2 = "com.example.madd_ordermanagement.MESSAGE2";
@@ -18,40 +19,47 @@ public class MyCart extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_cart);
+        setContentView(R.layout.activity_view_order);
 
-        ImageButton buttonCart = (ImageButton) findViewById(R.id.btnCart);
+        Button buttonViewProduct = (Button) findViewById(R.id.btnViewProduct);
 
-        buttonCart.setOnClickListener(new View.OnClickListener(){
+        buttonViewProduct.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(MyCart.this, MyCart.class));
+                startActivity(new Intent(ViewOrder.this, MainActivity.class));
             }
         });
 
-        Button buttonProduct1Update = (Button) findViewById(R.id.btnProduct1Update);
+        ImageButton buttonViewCart = (ImageButton) findViewById(R.id.btnCart);
 
-        buttonProduct1Update.setOnClickListener(new View.OnClickListener(){
+        buttonViewCart.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(MyCart.this, ViewOrder.class));
+                startActivity(new Intent(ViewOrder.this, MyCart.class));
             }
         });
 
-        Button buttonProduct1Delete = (Button) findViewById(R.id.btnProduct1Delete);
+        // Get the Intent that started this activity and extract the string
+        Intent intent = getIntent();
 
-        buttonProduct1Delete.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                startActivity(new Intent(MyCart.this, DeleteFromCart.class));
-            }
-        });
+        String message1 = intent.getStringExtra(MyAllOrders.EXTRA_MESSAGE1);
+        String message2 = intent.getStringExtra(MyAllOrders.EXTRA_MESSAGE2);
+        String message3 = intent.getStringExtra(MyAllOrders.EXTRA_MESSAGE3);
+
+        // Capture the layout's TextView and set the string as its text
+        TextView textView1 = findViewById(R.id.txtProduct1);
+        textView1.setText(message1);
+        TextView textView2 = findViewById(R.id.txtProduct1Price);
+        textView2.setText(message2);
+        TextView textView3 = findViewById(R.id.txtProduct1Items);
+        textView3.setText(message3);
 
     }
 
-    /** Called when the user taps the Chekout button */
+    /** Called when the user taps the Cancel order button */
     public void sendMessage(View view) {
 
         // Do something in response to button
 
-        Intent intent = new Intent(this, Checkout.class);
+        Intent intent = new Intent(this, CancelOrder.class);
 
         TextView textView1 = (TextView) findViewById(R.id.txtProduct1);
         String message1 = textView1.getText().toString();
@@ -68,4 +76,5 @@ public class MyCart extends AppCompatActivity {
         startActivity(intent);
 
     }
+
 }

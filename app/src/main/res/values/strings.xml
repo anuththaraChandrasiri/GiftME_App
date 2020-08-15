@@ -52,4 +52,8 @@
     <string name="text_viewOrder">View order</string>
     <string name="text_shopMore">Shop more</string>
     <string name="text_noOrdersToPay">There are no orders to pay!</string>
+    <string name="text_cancelOrder">Cancel order</string>
+    <string name="text_viewProduct">View product</string>
+    <string name="text_cancelOrderMessage2">cancel this order?</string>
+    <string name="text_exit">Exit</string>
 </resources>
