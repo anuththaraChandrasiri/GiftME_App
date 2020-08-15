@@ -9,10 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OccasionSelect_Activity"></activity>
+        <activity android:name=".CustomerMyAccount"></activity>
+        <activity android:name=".CustomerHomeMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OccasionSelect_Activity" />
         <activity android:name=".ResetPassword_Activity" />
         <activity android:name=".CustomerAccount_Activity" />
-        <activity android:name=".CustomerEditAccount_Activity"></activity>
+        <activity android:name=".CustomerEditAccount_Activity" />
         <activity android:name=".OccasionProduct_Activity" />
         <activity android:name=".AppLaunch_Activity" />
         <activity android:name=".login_Activity" />
@@ -20,13 +28,7 @@
         <activity android:name=".CreateAccount_Activity" />
         <activity android:name=".AddProduct_Activity" />
         <activity android:name=".AdminProduct_Activity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

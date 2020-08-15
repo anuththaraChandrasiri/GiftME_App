@@ -38,7 +38,7 @@ public class OccasionProduct_Activity extends AppCompatActivity {
         buton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(OccasionProduct_Activity.this,CustomerAccount_Activity.class);
+                Intent i = new Intent(OccasionProduct_Activity.this,CustomerMyAccount.class);
                 startActivity(i);
             }
         });

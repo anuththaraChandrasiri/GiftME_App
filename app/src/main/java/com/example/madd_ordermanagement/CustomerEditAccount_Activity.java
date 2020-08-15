@@ -48,7 +48,7 @@ public class CustomerEditAccount_Activity extends AppCompatActivity {
         buton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CustomerEditAccount_Activity.this,CustomerAccount_Activity.class);
+                Intent i = new Intent(CustomerEditAccount_Activity.this,CustomerMyAccount.class);
                 startActivity(i);
             }
         });

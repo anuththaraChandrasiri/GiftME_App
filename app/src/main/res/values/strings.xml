@@ -58,5 +58,7 @@
     <string name="Dummy">Dmmy Data</string>
     <string name="Accountdets">Account Details</string>
     <string name="resetPassword">\t\t\tReset Account Password</string>
+    <string name="valentineChoco">Valentine\'s Day Rose</string>
+    <string name="price2">LKR 2500.00</string>
 
 </resources>
