@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonAccount.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(MainActivity.this, MyAllOrders.class));
+                startActivity(new Intent(MainActivity.this, CustomerMyAccount.class));
             }
         });
 
