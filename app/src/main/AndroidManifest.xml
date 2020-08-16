@@ -26,6 +26,15 @@
             android:value="true" />
 
         <activity
+            android:name=".MainActivity3"
+            android:label="@string/title_activity_main3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.example.madd_Deliverymanagement.DeliverTo"
             android:label="@string/title_activity_deliver_to">
             <intent-filter>
