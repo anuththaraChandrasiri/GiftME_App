@@ -41,4 +41,5 @@
     <string name="text_product2">Toblerone</string>
     <string name="text_quantity2">4</string>
     <string name="text_price2">LKR 1000.00</string>
+    <string name="text_view">View payments</string>
 </resources>
