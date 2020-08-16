@@ -29,4 +29,16 @@
     <string name="text_exdate">Expiration date</string>
     <string name="text_cvv">cvv</string>
     <string name="butn_pay">Pay</string>
+    <string name="text_order">Order id :</string>
+    <string name="text_product">Product :</string>
+    <string name="text_quantity">Quantity :</string>
+    <string name="text_aprice">Price :</string>
+    <string name="text_order1">1235</string>
+    <string name="text_product1">Coffee cake</string>
+    <string name="text_quantity1">1</string>
+    <string name="text_price1">LKR1800.00</string>
+    <string name="text_order2">1236</string>
+    <string name="text_product2">Toblerone</string>
+    <string name="text_quantity2">4</string>
+    <string name="text_price2">LKR 1000.00</string>
 </resources>
