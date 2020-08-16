@@ -7,7 +7,7 @@
     <string name="dlt">Delete</string>
     <string name="sts">Price</string>
 
-    <string name = "dcode">Code</string>
+    <string name="dcode">Code</string>
     <string name="Vew">View</string>
     <string name="view_home">Home</string>
     <string name="view_occasions">Occasions</string>
@@ -30,6 +30,7 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_main3">MainActivity3</string>
+    <string name="title_activity_main4">MainActivity4</string>
 
 
 </resources>

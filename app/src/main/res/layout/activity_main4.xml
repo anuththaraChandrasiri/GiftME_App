@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtProduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E77D"
+    android:backgroundTint="#FFF38B"
+    android:textAlignment="center"
+    tools:context="com.example.madd_Deliverymanagement.DeliverDashboard">
+
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine3"
+        android:layout_width="376dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/navbarRectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="147dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:background="#0C0C0C"
+        android:text="Delivery History"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textDirection="anyRtl"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/navbarRectangle"
+        android:layout_width="412dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="870dp"
+        android:layout_marginBottom="500dp"
+        android:background="#ff8351"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintEnd_toStartOf="@+id/navbarRectangle"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/btnOccasion"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/occasion"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintEnd_toStartOf="@+id/btnCart"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle"
+        app:layout_constraintVertical_bias="0.166"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/btnCart"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/cart"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/btnBuyNow"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnAccount"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/account"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/btnBuyNow"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/txtHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/view_home"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtOccasions"
+        app:layout_constraintStart_toStartOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome" />
+
+    <TextView
+        android:id="@+id/txtOccasions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/view_occasions"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnOccasion" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="133dp"
+        android:text="@string/view_cart"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/navbarRectangle"
+        app:layout_constraintStart_toStartOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnCart" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="57dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="29dp"
+        android:text="@string/view_account"
+        android:textAlignment="center"
+        android:textColor="#0E0C0C"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/navbarRectangle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/btnAccount" />
+
+    <Button
+        android:id="@+id/btnBuyNow"
+        android:layout_width="155dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#FF3823"
+        android:text="@string/back"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="380dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="379dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
