@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MADD_OrderManagement</string>
+    <string name="display_product">Product</string>
+    <string name="cake_name">Coffee cake</string>
+    <string name="cake_description">Same design as shown in the image. Weight is 1 Kg.</string>
+    <string name="cake_price">LKR 1800.00</string>
+    <string name="view_home">Home</string>
+    <string name="view_occasions">Occasions</string>
+    <string name="view_account">Account</string>
+    <string name="view_cart">Cart</string>
+    <string name="display_checkout">Buy now</string>
+    <string name="display_discountMessage">Buy more than 1 item and get a 5% discount!</string>
+    <string name="text_price">Total price : LKR 2500.00</string>
+    <string name="text_payment">Payment details</string>
+    <string name="text_method">Payment method</string>
+    <string name="but_credit">Credit card</string>
+    <string name="but_cash">Cash on delivery</string>
+    <string name="text_name">Customer name</string>
+    <string name="tex_address">Address</string>
+    <string name="butn_cancel">Cancel</string>
+    <string name="butn_update">Update</string>
+    <string name="butn_confirm">Confirm</string>
+    <string name="text_confirmpayment">Confirm payment</string>
+    <string name="butn_view">View order</string>
+    <string name="text_success">Successfully paid....</string>
+    <string name="text_terms">Accept terms and condtions</string>
+    <string name="text_pmethod">Payment method</string>
+    <string name="text_cardnum">Card number</string>
+    <string name="text_exdate">Expiration date</string>
+    <string name="text_cvv">cvv</string>
+    <string name="butn_pay">Pay</string>
+</resources>
