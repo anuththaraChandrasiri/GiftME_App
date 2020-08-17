@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtProduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#FFE3AE"
+    android:textAlignment="center"
+    tools:context=".OrdersToPay">
+
+    <ImageView
+        android:id="@+id/ordersRectangle"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="#FBF6F6"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/navbarRectangle"
+        android:layout_width="412dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="870dp"
+        android:background="#ff8351"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProduct"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintEnd_toStartOf="@+id/navbarRectangle"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle" />
+
+    <ImageButton
+        android:id="@+id/btnOccasion"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/occasion"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageButton
+        android:id="@+id/btnCart"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/cart"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle" />
+
+    <ImageButton
+        android:id="@+id/btnAccount"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/account"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle" />
+
+    <TextView
+        android:id="@+id/txtHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/view_home"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome" />
+
+    <TextView
+        android:id="@+id/txtOccasions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/view_occasions"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnOccasion" />
+
+    <TextView
+        android:id="@+id/txtCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="133dp"
+        android:text="@string/view_cart"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnCart" />
+
+    <TextView
+        android:id="@+id/txtAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="29dp"
+        android:text="@string/view_account"
+        android:textAlignment="center"
+        android:textColor="#0E0C0C"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnAccount" />
+
+    <ImageView
+        android:id="@+id/checkoutRectangle"
+        android:layout_width="361dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="170dp"
+        android:background="#FDFCFC"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/btnOccasion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgEmptyCart"
+        android:layout_width="231dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/checkoutRectangle"
+        app:layout_constraintTop_toTopOf="@+id/checkoutRectangle"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/empty" />
+
+    <Button
+        android:id="@+id/btnShopMore"
+        android:layout_width="166dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="80dp"
+        android:background="#FF8351"
+        android:text="@string/text_shopMore"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintStart_toEndOf="@+id/btnProduct1Update"
+        app:layout_constraintTop_toBottomOf="@+id/imgProduct1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtNoOrdersToPay"
+        android:layout_width="320dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="120dp"
+        android:background="#EDEDEB"
+        android:text="@string/text_noOrdersToPay"
+        android:textAlignment="center"
+        android:textColor="#090404"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="@+id/checkoutRectangle"
+        app:layout_constraintTop_toTopOf="@+id/checkoutRectangle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnAllOrders"
+        android:layout_width="152dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="11dp"
+        android:background="#FFFFFF"
+        android:text="@string/text_AllOrders"
+        android:textColor="#0C0C0B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ordersRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/ordersRectangle"
+        app:layout_constraintStart_toStartOf="@+id/ordersRectangle"
+        app:layout_constraintTop_toTopOf="@+id/ordersRectangle" />
+
+    <Button
+        android:id="@+id/btnOrdersToPay"
+        android:layout_width="157dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="#FAF5F5"
+        android:text="@string/text_OrdersToPay"
+        android:textColor="#FF8351"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ordersRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/ordersRectangle"
+        app:layout_constraintStart_toStartOf="@+id/ordersRectangle"
+        app:layout_constraintTop_toTopOf="@+id/ordersRectangle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
