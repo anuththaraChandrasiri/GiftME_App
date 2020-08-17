@@ -39,6 +39,13 @@
         <activity android:name=".AddProduct_Activity"/>
         <activity android:name=".AdminProduct_Activity" />
         <activity android:name=".login_Activity" />
+        <activity android:name=".PaymentDetailsActivity"></activity>
+        <activity android:name=".view_payment" />
+        <activity android:name=".confirm_card" />
+        <activity android:name=".payment_details_card" />
+        <activity android:name=".payment_details_cash" />
+        <activity android:name=".success" />
+        <activity android:name=".confirm_payment" />
     </application>
 
 </manifest>
