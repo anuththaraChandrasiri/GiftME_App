@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFAC0"
+    tools:context=".EditProduct_Activity">
+
+    <TextView
+        android:id="@+id/TVNavBarAdmin"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:background="#FFC957"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <ImageButton
+        android:id="@+id/btnAdminHome"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFC957"
+        app:layout_constraintBottom_toBottomOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdminOrders"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="@+id/TVNavBarAdmin"
+        app:layout_constraintTop_toTopOf="@+id/TVNavBarAdmin"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/btnAdminOrders"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFC957"
+        app:layout_constraintBottom_toBottomOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdminProducts"
+        app:layout_constraintTop_toTopOf="@+id/TVNavBarAdmin"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageButton
+        android:id="@+id/btnAdminProducts"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#FFC957"
+        app:layout_constraintBottom_toBottomOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdminAccount"
+        app:layout_constraintTop_toTopOf="@+id/TVNavBarAdmin"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/occasion" />
+
+    <ImageButton
+        android:id="@+id/btnAdminAccount"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#FFC957"
+        app:layout_constraintBottom_toBottomOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/TVNavBarAdmin"
+        app:layout_constraintTop_toTopOf="@+id/TVNavBarAdmin"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/account" />
+
+    <TextView
+        android:id="@+id/TvNavAdHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_home"
+        android:textColor="#0B0909"
+        app:layout_constraintBottom_toBottomOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdminOrders"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="@+id/TVNavBarAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdminHome"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TVNavAdOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/View_orders"
+        android:textColor="#100E0E"
+        app:layout_constraintBaseline_toBaselineOf="@+id/TvNavAdHome"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdminProducts"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/btnAdminHome" />
+
+    <TextView
+        android:id="@+id/TNavAdOccassoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_occasions"
+        android:textColor="#0B0A0A"
+        app:layout_constraintBaseline_toBaselineOf="@+id/TVNavAdOrder"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdminAccount"
+        app:layout_constraintStart_toEndOf="@+id/btnAdminOrders" />
+
+    <TextView
+        android:id="@+id/TvNavAdAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_account"
+        android:textColor="#070606"
+        app:layout_constraintBottom_toBottomOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/TVNavBarAdmin"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toEndOf="@+id/btnAdminProducts"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdminAccount"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TvEditProductMain"
+        android:layout_width="380dp"
+        android:layout_height="49dp"
+        android:background="#FFFFFF"
+        android:text="@string/EditProducts"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF6F00"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <ImageView
+        android:id="@+id/IvEditProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/TvEditProductMain"
+        app:layout_constraintEnd_toEndOf="@+id/TvEditProductMain"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="@+id/TvEditProductMain"
+        app:layout_constraintTop_toTopOf="@+id/TvEditProductMain"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/cart" />
+
+    <TextView
+        android:id="@+id/TVEditProductItemName"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:background="#B71C1C"
+        android:text="@string/itemNameView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvEditProductMain"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/editTextEditProductItemName"
+        android:layout_width="373dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVEditProductItemName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TvEditProductItemPrice"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:background="#B71C1C"
+        android:text="@string/ItemPriceView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditProductItemName"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/TvEditProductView1"
+        android:layout_width="376dp"
+        android:layout_height="30dp"
+        android:background="#B71C1C"
+        android:text="@string/selectOcassion"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditProductItemPrice"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <EditText
+        android:id="@+id/editTextEditProductItemPrice"
+        android:layout_width="373dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvEditProductItemPrice"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/CbEditProductOcas1"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:text="@string/occassion1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvEditProductView1"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <CheckBox
+        android:id="@+id/CbEditProductOcas2"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:text="@string/Occassion2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/CbEditProductOcas1"
+        app:layout_constraintTop_toBottomOf="@+id/TvEditProductView1"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <CheckBox
+        android:id="@+id/CbEditProductOcas3"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:text="@string/Occassion3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CbEditProductOcas1"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <CheckBox
+        android:id="@+id/CbEditProductOcas4"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:text="@string/Occassion4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CbEditProductOcas2"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <CheckBox
+        android:id="@+id/CbEditProductOcas5"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:text="@string/Occasion5"
+        app:layout_constraintBottom_toTopOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CbEditProductOcas3"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <CheckBox
+        android:id="@+id/CbEditProductOcas6"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:text="@string/Occassion6"
+        app:layout_constraintBottom_toTopOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CbEditProductOcas4"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <Button
+        android:id="@+id/btnEditProductSave"
+        android:layout_width="321dp"
+        android:layout_height="38dp"
+        android:background="#E65100"
+        android:shadowColor="#070707"
+        android:shadowDx="100"
+        android:shadowDy="100"
+        android:shadowRadius="100"
+        android:text="@string/AddProductSave"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/TVNavBarAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CbEditProductOcas5"
+        app:layout_constraintVertical_bias="0.756" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
