@@ -46,6 +46,10 @@
         <activity android:name=".payment_details_cash" />
         <activity android:name=".success" />
         <activity android:name=".confirm_payment" />
+        <activity android:name=".DeliverDashboard"/>
+        <activity android:name=".DeliverTo"/>
+        <activity android:name=".OrderTo"/>
+        <activity android:name=".DeliveryHIstory"/>
     </application>
 
 </manifest>
