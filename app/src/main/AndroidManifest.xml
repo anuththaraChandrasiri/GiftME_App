@@ -28,54 +28,38 @@
         <activity
             android:name="com.example.madd_Deliverymanagement.DeliveryHIstory"
             android:label="@string/title_activity_main4">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
         <activity
             android:name="com.example.madd_Deliverymanagement.DeliverTo"
             android:label="@string/title_activity_main3">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
         <activity
             android:name="com.example.madd_Deliverymanagement.DeliverTo"
             android:label="@string/title_activity_deliver_to">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
         <activity
             android:name=".DeliverTo"
             android:label="@string/title_activity_deliver_to">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
         <activity
             android:name="com.example.madd_Deliverymanagement.OrderTo"
-            android:label="@string/title_activity_main2">
-            <intent-filter>
+            android:label="@string/title_activity_main2"><intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+            
+        </activity><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         <activity android:name="com.example.madd_Deliverymanagement.DeliverDashboard">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
     </application>
 
