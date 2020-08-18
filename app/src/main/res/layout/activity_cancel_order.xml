@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtProduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE3AE"
+    android:backgroundTint="#FFE3AE"
+    android:textAlignment="center"
+    tools:context=".CancelOrder">
+
+    <TextView
+        android:id="@+id/txtCancelOrder"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="#F6F2F2"
+        android:text="@string/text_cancelOrder"
+        android:textAlignment="center"
+        android:textColor="#FF8351"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/navbarRectangle"
+        android:layout_width="412dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="870dp"
+        android:background="#ff8351"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProduct"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintEnd_toStartOf="@+id/navbarRectangle"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle" />
+
+    <ImageButton
+        android:id="@+id/btnOccasion"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/occasion"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageButton
+        android:id="@+id/btnCart"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/cart"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle" />
+
+    <ImageButton
+        android:id="@+id/btnAccount"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF8351"
+        android:src="@drawable/account"
+        app:layout_constraintBottom_toBottomOf="@+id/navbarRectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbarRectangle" />
+
+    <TextView
+        android:id="@+id/txtHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/view_home"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnHome" />
+
+    <TextView
+        android:id="@+id/txtOccasions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/view_occasions"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnOccasion" />
+
+    <TextView
+        android:id="@+id/txtCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="133dp"
+        android:text="@string/view_cart"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnCart" />
+
+    <TextView
+        android:id="@+id/txtAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="29dp"
+        android:text="@string/view_account"
+        android:textAlignment="center"
+        android:textColor="#0E0C0C"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/navbarRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/btnAccount" />
+
+    <ImageView
+        android:id="@+id/checkoutRectangle"
+        android:layout_width="349dp"
+        android:layout_height="309dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FDFCFC"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgProduct1"
+        android:layout_width="195dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintStart_toStartOf="@+id/checkoutRectangle"
+        app:layout_constraintTop_toTopOf="@+id/checkoutRectangle"
+        app:srcCompat="@drawable/cake" />
+
+    <TextView
+        android:id="@+id/txtProduct1"
+        android:layout_width="110dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#131111"
+        app:layout_constraintBottom_toTopOf="@+id/txtProduct1Price"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgProduct1"
+        app:layout_constraintTop_toTopOf="@+id/checkoutRectangle" />
+
+    <TextView
+        android:id="@+id/txtProduct1Price"
+        android:layout_width="108dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="135dp"
+        android:textColor="#120A0A"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgProduct1"
+        app:layout_constraintTop_toTopOf="@+id/checkoutRectangle" />
+
+    <TextView
+        android:id="@+id/txtProduct1Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="104dp"
+        android:text="@string/text_Quantity"
+        android:textColor="#0E0707"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="@+id/checkoutRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/txtProduct1Price" />
+
+    <TextView
+        android:id="@+id/txtProduct1Items"
+        android:layout_width="10dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="104dp"
+        android:textColor="#0B0808"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toEndOf="@+id/txtProduct1Quantity"
+        app:layout_constraintTop_toBottomOf="@+id/txtProduct1Price" />
+
+    <Button
+        android:id="@+id/btnProduct1Cancel"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FF8351"
+        android:text="@string/text_cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintStart_toEndOf="@+id/btnExit"
+        app:layout_constraintTop_toBottomOf="@+id/imgProduct1"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFD8AD"
+        android:text="@string/text_exit"
+        app:layout_constraintBottom_toBottomOf="@+id/checkoutRectangle"
+        app:layout_constraintEnd_toStartOf="@+id/btnProduct1Cancel"
+        app:layout_constraintStart_toStartOf="@+id/checkoutRectangle"
+        app:layout_constraintTop_toTopOf="@+id/checkoutRectangle" />
+
+    <TextView
+        android:id="@+id/txtOrderNumber1"
+        android:layout_width="320dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="2dp"
+        android:background="#FEF8A0"
+        android:text="@string/text_message1"
+        android:textAlignment="center"
+        android:textColor="#090404"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtMessage2"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintStart_toStartOf="@+id/checkoutRectangle"
+        app:layout_constraintTop_toTopOf="@+id/checkoutRectangle" />
+
+    <TextView
+        android:id="@+id/txtCancelOrderMessage2"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="21dp"
+        android:background="#FEF8A0"
+        android:text="@string/text_cancelOrderMessage2"
+        android:textAlignment="center"
+        android:textColor="#040202"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgProduct1"
+        app:layout_constraintEnd_toEndOf="@+id/checkoutRectangle"
+        app:layout_constraintStart_toStartOf="@+id/checkoutRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrderNumber1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
