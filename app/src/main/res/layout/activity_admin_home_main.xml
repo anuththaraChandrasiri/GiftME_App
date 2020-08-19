@@ -6,15 +6,14 @@
     android:layout_height="match_parent"
     android:background="#FFE3AE"
     android:backgroundTint="#FFE3AE"
-    tools:context=".CustomerEditAccount_Activity">
-
+    tools:context=".AdminHome">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="411dp"
         android:layout_height="74dp"
-        android:background="#FF8351"
-        android:backgroundTint="#FF8351"
+        android:background="#FFC957"
+        android:backgroundTint="#FFC957"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.142"
@@ -26,7 +25,7 @@
         android:id="@+id/btnHomeBack"
         android:layout_width="55dp"
         android:layout_height="40dp"
-        android:backgroundTint="#ff8351"
+        android:backgroundTint="#FFC957"
         android:contentDescription="@string/view_home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,10 +36,10 @@
         app:srcCompat="@drawable/home" />
 
     <ImageButton
-        android:id="@+id/btnOccasion"
+        android:id="@+id/btnOrders"
         android:layout_width="55dp"
         android:layout_height="40dp"
-        android:backgroundTint="#ff8351"
+        android:backgroundTint="#FFC957"
         android:contentDescription="@string/view_products"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,27 +47,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.935"
-        app:srcCompat="@drawable/occasion" />
+        app:srcCompat="@drawable/orders" />
 
     <ImageButton
-        android:id="@+id/btnAccount"
+        android:id="@+id/btnProducts"
         android:layout_width="55dp"
         android:layout_height="40dp"
-        android:backgroundTint="#ff8351"
-        android:contentDescription="@string/view_account"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.915"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94"
-        app:srcCompat="@drawable/account" />
-
-    <ImageButton
-        android:id="@+id/btnCart"
-        android:layout_width="55dp"
-        android:layout_height="40dp"
-        android:backgroundTint="#ff8351"
+        android:backgroundTint="#FFC957"
         android:contentDescription="@string/View_orders"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,14 +61,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.94"
-        app:srcCompat="@drawable/cart" />
+        app:srcCompat="@drawable/products" />
 
     <TextView
         android:id="@+id/TvCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#ff8351"
-        android:text="@string/tvCart"
+        android:background="#FFC957"
+        android:text="@string/text_products"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -99,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
         android:layout_marginEnd="35dp"
-        android:background="#ff8351"
+        android:background="#FFC957"
         android:text="@string/view_account"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -112,12 +97,13 @@
         android:id="@+id/TvOccasion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tvOccasion"
+        android:layout_marginEnd="10dp"
+        android:text="@string/text_orders"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/TvCart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -140,7 +126,7 @@
         android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
-        android:text="@string/editAccount"
+        android:text="@string/view_home"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FF8351"
@@ -164,111 +150,156 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024"
-        app:srcCompat="@drawable/occasion" />
+        app:srcCompat="@drawable/home" />
 
-    <TextView
-        android:id="@+id/TvPasswordedit"
-        android:layout_width="67dp"
-        android:layout_height="34dp"
-        android:background="#B71C1C"
-        android:text="@string/formName"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        android:textStyle="normal|bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editCusAccName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/TvreEnterPswd"
-        android:layout_width="67dp"
-        android:layout_height="34dp"
-        android:background="#B71C1C"
-        android:text="@string/loginLabel1"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        android:textStyle="normal|bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editCusAccMail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/TvAccounPhone"
-        android:layout_width="67dp"
-        android:layout_height="34dp"
-        android:background="#B71C1C"
-        android:text="@string/phone"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        android:textStyle="normal|bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editCusAccPhone"
+    <ImageButton
+        android:id="@+id/btnAccount"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:background="#FFC957"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.865"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintVertical_bias="0.933"
+        app:srcCompat="@drawable/account" />
+
+    <TextView
+        android:id="@+id/TvContainerBlack"
+        android:layout_width="329dp"
+        android:layout_height="171dp"
+        android:background="#0C0B0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <TextView
+        android:id="@+id/tvContainerBlack3"
+        android:layout_width="329dp"
+        android:layout_height="171dp"
+        android:background="#0C0B0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
 
     <Button
-        android:id="@+id/btnSaveEdit"
-        android:layout_width="287dp"
-        android:layout_height="50dp"
+        android:id="@+id/btnView"
+        android:layout_width="112dp"
+        android:layout_height="45dp"
         android:background="#B71C1C"
-        android:text="@string/AddProductSave"
+        android:shadowDx="50"
+        android:text="@string/ViewProd"
         android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvContainerBlack3"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <TextView
+        android:id="@+id/tvToblerone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valentineChoco"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
+        app:layout_constraintVertical_bias="0.492" />
 
-    <EditText
-        android:id="@+id/editCusAccName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/Dummy"
+    <ImageView
+        android:id="@+id/imageViewTob2"
+        android:layout_width="189dp"
+        android:layout_height="95dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.621"
+        app:srcCompat="@drawable/rose" />
 
-    <EditText
-        android:id="@+id/editCusAccMail"
+    <TextView
+        android:id="@+id/TvToblerone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="@string/Dummy"
+        android:text="@string/toblerone"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.246" />
+        app:layout_constraintVertical_bias="0.169" />
 
-    <EditText
-        android:id="@+id/editCusAccPhone"
+    <ImageView
+        android:id="@+id/imageViewTob"
+        android:layout_width="189dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/toblerone" />
+
+    <Button
+        android:id="@+id/btnView1"
+        android:layout_width="109dp"
+        android:layout_height="45dp"
+        android:background="#B71C1C"
+        android:shadowDx="50"
+        android:text="@string/ViewProd"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TvContainerBlack"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <TextView
+        android:id="@+id/TVPriceTag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
+        android:text="@string/price"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336"
-        tools:text="@tools:sample/us_phones" />
+        app:layout_constraintVertical_bias="0.265" />
+
+    <TextView
+        android:id="@+id/TVPriceTag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

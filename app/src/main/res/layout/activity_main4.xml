@@ -60,7 +60,7 @@
         app:layout_constraintVertical_bias="0.421" />
 
     <ImageButton
-        android:id="@+id/btnHome"
+        android:id="@+id/btnHomeBack"
         android:layout_width="55dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
@@ -147,7 +147,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/txtOccasions"
         app:layout_constraintStart_toStartOf="@+id/navbarRectangle"
-        app:layout_constraintTop_toBottomOf="@+id/btnHome" />
+        app:layout_constraintTop_toBottomOf="@+id/btnHomeBack" />
 
     <TextView
         android:id="@+id/txtOccasions"
@@ -204,7 +204,7 @@
         android:backgroundTint="#FF3823"
         android:text="@string/back"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/btnHome"
+        app:layout_constraintBottom_toTopOf="@+id/btnHomeBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

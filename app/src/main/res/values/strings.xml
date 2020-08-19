@@ -193,4 +193,8 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_main3">MainActivity3</string>
     <string name="title_activity_main4">MainActivity4</string>
+    <string name="text_userGuide">User guide</string>
+    <string name="text_admin">Administrator</string>
+    <string name="text_customer">Customer</string>
+    <string name="text_tempMesage">(This interface is a temporary interface which is used to check the navigation.)</string>
 </resources>
