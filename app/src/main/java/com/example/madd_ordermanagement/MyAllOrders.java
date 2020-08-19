@@ -20,6 +20,38 @@ public class MyAllOrders extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_all_orders);
 
+        ImageButton buttonHome = (ImageButton) findViewById(R.id.btnHomeBack);
+
+        buttonHome.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MyAllOrders.this, CustomerHomeMain.class));
+            }
+        });
+
+        ImageButton buttonOccasion = (ImageButton) findViewById(R.id.btnOccasion);
+
+        buttonOccasion.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MyAllOrders.this, OccasionSelect_Activity.class));
+            }
+        });
+
+        ImageButton buttonCart = (ImageButton) findViewById(R.id.btnCart);
+
+        buttonCart.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MyAllOrders.this, MyCart.class));
+            }
+        });
+
+        ImageButton buttonAccount = (ImageButton) findViewById(R.id.btnAccount);
+
+        buttonAccount.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MyAllOrders.this, CustomerMyAccount.class));
+            }
+        });
+
         Button buttonOrdersToPay = (Button) findViewById(R.id.btnOrdersToPay);
 
         buttonOrdersToPay.setOnClickListener(new View.OnClickListener(){

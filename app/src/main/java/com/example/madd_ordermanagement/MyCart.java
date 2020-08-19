@@ -20,11 +20,35 @@ public class MyCart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_cart);
 
+        ImageButton buttonHome = (ImageButton) findViewById(R.id.btnHomeBack);
+
+        buttonHome.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MyCart.this, CustomerHomeMain.class));
+            }
+        });
+
+        ImageButton buttonOccasion = (ImageButton) findViewById(R.id.btnOccasion);
+
+        buttonOccasion.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MyCart.this, OccasionSelect_Activity.class));
+            }
+        });
+
         ImageButton buttonCart = (ImageButton) findViewById(R.id.btnCart);
 
         buttonCart.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MyCart.this, MyCart.class));
+            }
+        });
+
+        ImageButton buttonAccount = (ImageButton) findViewById(R.id.btnAccount);
+
+        buttonAccount.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MyCart.this, CustomerMyAccount.class));
             }
         });
 

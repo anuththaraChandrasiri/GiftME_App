@@ -18,6 +18,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ImageButton buttonHome = (ImageButton) findViewById(R.id.btnHomeBack);
+
+        buttonHome.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, CustomerHomeMain.class));
+            }
+        });
+
+        ImageButton buttonOccasion = (ImageButton) findViewById(R.id.btnOccasion);
+
+        buttonOccasion.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, OccasionSelect_Activity.class));
+            }
+        });
+
         ImageButton buttonCart = (ImageButton) findViewById(R.id.btnCart);
 
         buttonCart.setOnClickListener(new View.OnClickListener(){
@@ -31,14 +47,6 @@ public class MainActivity extends AppCompatActivity {
         buttonAccount.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MainActivity.this, CustomerMyAccount.class));
-            }
-        });
-
-        ImageButton buttonHome = (ImageButton) findViewById(R.id.btnBackToProduct);
-
-        buttonHome.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                startActivity(new Intent(MainActivity.this, AdminMyAccount.class));
             }
         });
 

@@ -1,41 +1,40 @@
 package com.example.madd_ordermanagement;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-
-public class CustomerHomeMain extends AppCompatActivity {
+public class AdminHome extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_customer_home_main);
+        setContentView(R.layout.activity_admin_home_main);
 
         ImageButton buttonHome = (ImageButton) findViewById(R.id.btnHomeBack);
 
         buttonHome.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(CustomerHomeMain.this, CustomerHomeMain.class));
+                startActivity(new Intent(AdminHome.this, CustomerHomeMain.class));
             }
         });
 
-        ImageButton buttonOccasion = (ImageButton) findViewById(R.id.btnOccasion);
+        ImageButton buttonOrders = (ImageButton) findViewById(R.id.btnOrders);
 
-        buttonOccasion.setOnClickListener(new View.OnClickListener(){
+        buttonOrders.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(CustomerHomeMain.this, OccasionSelect_Activity.class));
+                startActivity(new Intent(AdminHome.this, OccasionSelect_Activity.class));
             }
         });
 
-        ImageButton buttonCart = (ImageButton) findViewById(R.id.btnCart);
+        ImageButton buttonProducts = (ImageButton) findViewById(R.id.btnProducts);
 
-        buttonCart.setOnClickListener(new View.OnClickListener(){
+        buttonProducts.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(CustomerHomeMain.this, MyCart.class));
+                startActivity(new Intent(AdminHome.this, MyCart.class));
             }
         });
 
@@ -43,7 +42,7 @@ public class CustomerHomeMain extends AppCompatActivity {
 
         buttonAccount.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(CustomerHomeMain.this, CustomerMyAccount.class));
+                startActivity(new Intent(AdminHome.this, AdminMyAccount.class));
             }
         });
 

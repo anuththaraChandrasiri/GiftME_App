@@ -55,7 +55,7 @@ public class Checkout extends AppCompatActivity {
             }
         });
 
-        ImageButton buttonBack = (ImageButton) findViewById(R.id.btnBackToProduct);
+        ImageButton buttonBack = (ImageButton) findViewById(R.id.btnHomeBack);
 
         buttonBack.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

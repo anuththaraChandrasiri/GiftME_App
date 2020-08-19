@@ -14,12 +14,11 @@ public class CreateAccount_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account_);
 
-        Button btn = findViewById(R.id.btnSignIn);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(CreateAccount_Activity.this, CustomerAccount_Activity.class);
-                startActivity(i);
+        Button buttonSignIn = (Button) findViewById(R.id.btnSignIn);
+
+        buttonSignIn.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(CreateAccount_Activity.this, UserGuide.class));
             }
         });
     }

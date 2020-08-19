@@ -25,7 +25,7 @@ public class CustomerEditAccount_Activity extends AppCompatActivity {
             }
         });
 
-        btn = findViewById(R.id.btnHome);
+        btn = findViewById(R.id.btnHomeBack);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
