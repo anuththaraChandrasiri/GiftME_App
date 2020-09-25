@@ -16,7 +16,6 @@
     <string name="text_noOfItems">(5 items are available)</string>
     <string name="text_checkout">Checkout</string>
     <string name="text_billAndDeliverTo">Bill and deliver to :</string>
-    <string name="text_KasunPerera">Kasun Perera</string>
     <string name="text_AddressOfKasun">589, Kandy, Central</string>
     <string name="text_phoneOfKasun">0771234567</string>
     <string name="text_emailOfKasun">kasun.p@gmail.com</string>
@@ -197,4 +196,6 @@
     <string name="text_admin">Administrator</string>
     <string name="text_customer">Customer</string>
     <string name="text_tempMesage">(This interface is a temporary interface which is used to check the navigation.)</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_gift_m_e_home">GiftME_home</string>
 </resources>
